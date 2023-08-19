@@ -48,7 +48,7 @@ endif
 FP_TRACKBALL_BOTH ?= no
 FP_CIRQUE_BOTH ?= no
 FP_TRACKBALL_LEFT_ONLY ?= no
-FP_TRACKBALL_RIGHT_ONLY ?= no
+FP_TRACKBALL_RIGHT_ONLY ?= yes
 FP_CIRQUE_LEFT_ONLY ?= no
 FP_CIRQUE_RIGHT_ONLY ?= no
 FP_TRACKBALL_LEFT_CIRQUE_RIGHT ?= no
@@ -56,7 +56,7 @@ FP_CIRQUE_LEFT_TRACKBALL_RIGHT ?= no
 # When qmk supports multiple types of pointing devices, can remove this line below
 # Also, can remove the question from fp_build.json
 FP_SPLIT_LEFT ?= no
-FP_SPLIT_RIGHT ?= no
+FP_SPLIT_RIGHT ?= yes
 
 ifeq ($(strip $(FP_TRACKBALL_BOTH)), yes)
    PMW3360_ENABLE = yes
