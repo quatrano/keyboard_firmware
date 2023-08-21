@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,----------------------------------.           ,----------------------------------.
  * |   `  |   \  |   -  |   =  |      |           |      |   '  |   "  |      |      |
  * |------+------+------+------+------|           |------+------+------+------+------|
- * |   (  |   )  |   [  |   ]  |      |           |      | MO(2)|  Gui |  Ctl |  Alt |
+ * |   (  |   )  |   [  |   ]  |      |           |      | Shft |  Gui |  Ctl |  Alt |
  * |------+------+------+------+------|           |------+------+------+------+------|
  * |   <  |   >  |   {  |   }  |      |           |      |      |      |      |      |
  * `----------------------------------'           `----------------------------------'
@@ -136,9 +136,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* 6
  *
  * ,----------------------------------.           ,----------------------------------.
- * |      |      |      |      |      |           |      |      |      |      |      |
+ * | Boot | Debug| Eeclr|  Rbt |      |           | Lclk | Rclk |      |      |      |
  * |------+------+------+------+------|           |------+------+------+------+------|
- * |      |      |      | RESET|      |           |      |      |      |      |      |
+ * |  Alt |  Ctl |  Gui | Shft |      |           | Wleft| Wdown|  Wup |Wright|      |
  * |------+------+------+------+------|           |------+------+------+------+------|
  * |      |      |      |      |      |           |      |      |      |      |      |
  * `----------------------------------'           `----------------------------------'
@@ -147,9 +147,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                  `--------------------'    `--------------------.
  */
 [6] = LAYOUT_ximi36(
-  KC_NO,        KC_NO,       KC_NO,        KC_NO,        KC_NO,       KC_NO,          KC_NO,          KC_NO,         KC_NO,        KC_NO,
-  QK_BOOT,      DB_TOGG,     EE_CLR,       QK_RBT,       KC_NO,       KC_NO,          KC_NO,          KC_NO,         KC_NO,        KC_NO,
-  KC_NO,        KC_NO,       KC_NO,        KC_NO,        KC_NO,       KC_NO,          KC_NO,          KC_NO,         KC_NO,        KC_NO,
+  QK_BOOT,      DB_TOGG,     EE_CLR,       QK_RBT,       KC_NO,       KC_BTN1,        KC_BTN2,        KC_NO,         KC_NO,          KC_NO,
+  KC_LALT,      KC_LCTL,     KC_LGUI,      KC_LSFT,      KC_NO,       KC_MS_WH_LEFT,  KC_MS_WH_DOWN,  KC_MS_WH_UP,   KC_MS_WH_RIGHT, KC_NO,
+  KC_NO,        KC_NO,       KC_NO,        KC_NO,        KC_NO,       KC_NO,          KC_NO,          KC_NO,         KC_NO,          KC_NO,
                              KC_NO,        KC_NO,        KC_NO,       KC_NO,          KC_NO,          KC_NO
 ),
 
