@@ -45,10 +45,10 @@ ifeq ($(strip $(RGB_MATRIX_ENABLE)), yes)
 endif
 
 # Choose only one (or none) of the 8 options below
-FP_TRACKBALL_BOTH ?= no
+FP_TRACKBALL_BOTH ?= yes
 FP_CIRQUE_BOTH ?= no
 FP_TRACKBALL_LEFT_ONLY ?= no
-FP_TRACKBALL_RIGHT_ONLY ?= yes
+FP_TRACKBALL_RIGHT_ONLY ?= no
 FP_CIRQUE_LEFT_ONLY ?= no
 FP_CIRQUE_RIGHT_ONLY ?= no
 FP_TRACKBALL_LEFT_CIRQUE_RIGHT ?= no

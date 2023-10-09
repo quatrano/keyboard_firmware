@@ -1,4 +1,12 @@
-# Quantum Mechanical Keyboard Firmware
+# Keyboard Firmware
+
+1. modify the args in `rules.mk`
+
+2. `util/docker_build.sh fingerpunch/ximi:aq`
+
+3. files go to the root dir `fingerpunch_ximi_aq.uf2`
+
+## Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
 [![Discord](https://img.shields.io/discord/440868230475677696.svg)](https://discord.gg/Uq7gcHh)
