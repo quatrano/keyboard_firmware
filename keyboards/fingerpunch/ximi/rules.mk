@@ -17,7 +17,7 @@ BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 
 # Either do RGBLIGHT_ENABLE or RGB_MATRIX_ENABLE and RGB_MATRIX_DRIVER
 RGBLIGHT_ENABLE ?= no
-RGB_MATRIX_ENABLE ?= yes      # not supported yet, but will add
+RGB_MATRIX_ENABLE ?= yes
 RGB_MATRIX_DRIVER = WS2812
 WS2812_DRIVER = vendor
 
@@ -146,3 +146,6 @@ SRC +=  keyboards/fingerpunch/src/fp.c \
         keyboards/fingerpunch/src/fp_rgb_common.c \
         keyboards/fingerpunch/src/fp_rgblight.c \
         keyboards/fingerpunch/src/fp_rgb_matrix.c
+
+FP_POINTING_SCROLLING_DPI = 1
+FP_POINTING_SCROLLING_MIN_DPI = 1
