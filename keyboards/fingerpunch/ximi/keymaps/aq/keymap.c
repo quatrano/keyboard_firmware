@@ -16,21 +16,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* 0
  *
  * ,----------------------------------.           ,----------------------------------.
- * |   Q  |   W  |   E  |   R  |   T  |           |   Y  |   U  |   I  |   O  |   P  |
+ * |   Q  |   W  |   E  |   R  |  T*  |           |   Y  |   U  |   I  |   O  |   P  |
  * |------+------+------+------+------|           |------+------+------+------+------|
  * |  A*  |  S*  |  D*  |  F*  |   G  |           |   H  |  J*  |  K*  |  L*  |  *;  |
  * |------+------+------+------+------|           |------+------+------+------+------|
  * |   Z  |   X  |   C  |   V  |   B  |           |   N  |   M  |   ,  |   .  |   /  |
  * `----------------------------------'           `----------------------------------'
  *                  ,--------------------.    ,--------------------.
- *                  |BSpc*|  Del* | Esc* |    |  Tab*|Enter*| Spc* |
+ *                  | Esc | BSPC* | Del* |    | Enter| Spc* | Tab* |
  *                  `--------------------'    `--------------------.
  */
 [0] = LAYOUT_ximi36(
-  KC_Q,         KC_W,         KC_E,           KC_R,           KC_T,           KC_Y,        KC_U,          KC_I,          KC_O,         KC_P,
+  KC_Q,         KC_W,         KC_E,           KC_R,           LT(6,KC_T),     KC_Y,        KC_U,          KC_I,          KC_O,         KC_P,
   LALT_T(KC_A), LCTL_T(KC_S), LGUI_T(KC_D),   LSFT_T(KC_F),   KC_G,           KC_H,        RSFT_T(KC_J),  RGUI_T(KC_K),  RCTL_T(KC_L), RALT_T(KC_SCLN),
   KC_Z,         KC_X,         KC_C,           KC_V,           KC_B,           KC_N,        KC_M,          KC_COMM,       KC_DOT,       KC_SLSH,
-                              LT(6,KC_ESCAPE),LT(1,KC_BSPC),  LT(4,KC_DELETE),LT(6,KC_ENTER),LT(3,KC_SPACE), LT(6,KC_TAB)
+                              KC_ESCAPE,      LT(1,KC_BSPC),  LT(4,KC_DELETE),KC_ENTER,    LT(3,KC_SPACE),KC_TAB
 ),
 
 /* 1
@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |   <  |   >  |   {  |   }  |      |           |      |      |      |      |      |
  * `----------------------------------'           `----------------------------------'
  *                  ,--------------------.    ,--------------------.
- *                  |BSpc*|  Del* | Esc* |    |  Tab*|Enter*| Spc* |
+ *                  |     |#######|      |    |      |      |      |
  *                  `--------------------'    `--------------------.
  */
 [1] = LAYOUT_ximi36(
@@ -66,12 +66,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                  |     |       |      |    |      |      |      |
  *                  `--------------------'    `--------------------.
  */
-[2] = LAYOUT_ximi36(
-  KC_TILD,      KC_PIPE,      KC_UNDS,        KC_PLUS,        KC_NO,          KC_NO,       KC_NO,      KC_NO,       KC_NO,       KC_NO,
-  KC_HASH,      KC_AT,        KC_EXLM,        KC_CAPS_LOCK,   KC_NO,          KC_NO,       KC_NO,      KC_NO,       KC_NO,       KC_NO,
-  KC_UNDS,      KC_NO,        KC_ASTR,        KC_AMPR,        KC_NO,          KC_NO,       KC_NO,      KC_NO,       KC_NO,       KC_NO,
-                              KC_NO,          KC_NO,          KC_NO,          KC_NO,       KC_NO,      KC_NO
-),
+//[2] = LAYOUT_ximi36(
+//  KC_TILD,      KC_PIPE,      KC_UNDS,        KC_PLUS,        KC_NO,          KC_NO,       KC_NO,      KC_NO,       KC_NO,       KC_NO,
+//  KC_HASH,      KC_AT,        KC_EXLM,        KC_CAPS_LOCK,   KC_NO,          KC_NO,       KC_NO,      KC_NO,       KC_NO,       KC_NO,
+//  KC_UNDS,      KC_NO,        KC_ASTR,        KC_AMPR,        KC_NO,          KC_NO,       KC_NO,      KC_NO,       KC_NO,       KC_NO,
+//                              KC_NO,          KC_NO,          KC_NO,          KC_NO,       KC_NO,      KC_NO
+//),
 
 /* 3
  *
@@ -83,7 +83,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |      |      |      |      |      |           |      |      |      |      |      |
  * `----------------------------------'           `----------------------------------'
  *                  ,--------------------.    ,--------------------.
- *                  |     |       |      |    |      |      |      |
+ *                  |     |       |      |    |      |######|      |
  *                  `--------------------'    `--------------------.
  */
 [3] = LAYOUT_ximi36(
@@ -103,7 +103,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |   -  |   9  |   8  |   7  |      |           |      |      |      |      |      |
  * `----------------------------------'           `----------------------------------'
  *                  ,--------------------.    ,--------------------.
- *                  |     |       |      |    |      |      |      |
+ *                  |     |       |######|    |      |      |      |
  *                  `--------------------'    `--------------------.
  */
 [4] = LAYOUT_ximi36(
@@ -136,7 +136,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* 6
  *
  * ,----------------------------------.           ,----------------------------------.
- * | Boot | Debug| Eeclr|  Rbt |      |           | Lclk | Rclk |      |      |      |
+ * | Boot | Debug| Eeclr|  Rbt |######|           | Lclk | Rclk |      |      |      |
  * |------+------+------+------+------|           |------+------+------+------+------|
  * |  Alt |  Ctl |  Gui | Shft |      |           | Wleft| Wdown|  Wup |Wright|      |
  * |------+------+------+------+------|           |------+------+------+------+------|
