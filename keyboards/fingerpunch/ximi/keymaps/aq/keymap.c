@@ -147,10 +147,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                  `--------------------'    `--------------------.
  */
 [6] = LAYOUT_ximi36(
-  KC_NO,        DB_TOGG,     EE_CLR,       QK_RBT,       KC_NO,       KC_BTN1,        KC_BTN2,        KC_NO,         KC_NO,          KC_NO,
-  KC_LALT,      KC_LCTL,     KC_LGUI,      KC_LSFT,      KC_NO,       KC_MS_WH_LEFT,  KC_MS_WH_DOWN,  KC_MS_WH_UP,   KC_MS_WH_RIGHT, KC_NO,
-  KC_NO,        KC_NO,       KC_NO,        KC_NO,        QK_BOOT,     KC_NO,          KC_NO,          KC_NO,         KC_NO,          KC_NO,
-                             KC_NO,        KC_NO,        KC_NO,       KC_NO,          KC_NO,          KC_NO
+  KC_NO,        DB_TOGG,     EE_CLR,          QK_RBT,       KC_NO,       KC_BTN1,        KC_BTN2,        KC_NO,         KC_NO,          KC_NO,
+  KC_LALT,      KC_LCTL,     KC_LGUI,         KC_LSFT,      KC_NO,       KC_MS_WH_LEFT,  KC_MS_WH_DOWN,  KC_MS_WH_UP,   KC_MS_WH_RIGHT, KC_NO,
+  KC_NO,        FP_DPI_DOWN, FP_SCROLL_DPI_DN,KC_NO,        QK_BOOT,     KC_NO,          KC_NO,          KC_NO,         KC_NO,          KC_NO,
+                             KC_NO,           KC_NO,        KC_NO,       KC_NO,          KC_NO,          KC_NO
 ),
 
 };

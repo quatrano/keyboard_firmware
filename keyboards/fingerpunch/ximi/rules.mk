@@ -136,6 +136,9 @@ ifeq ($(strip $(PMW3360_ENABLE)), yes)
    OPT_DEFS += -DFP_TRACKBALL_ENABLE
 endif
 
+FP_POINTING_SCROLLING_DPI = 1
+FP_POINTING_SCROLLING_MIN_DPI = 1
+
 DEFERRED_EXEC_ENABLE = yes
 SRC +=  keyboards/fingerpunch/src/fp.c \
         keyboards/fingerpunch/src/fp_haptic.c \
@@ -147,5 +150,3 @@ SRC +=  keyboards/fingerpunch/src/fp.c \
         keyboards/fingerpunch/src/fp_rgblight.c \
         keyboards/fingerpunch/src/fp_rgb_matrix.c
 
-FP_POINTING_SCROLLING_DPI = 1
-FP_POINTING_SCROLLING_MIN_DPI = 1
