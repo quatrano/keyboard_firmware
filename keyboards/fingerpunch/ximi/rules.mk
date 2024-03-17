@@ -17,7 +17,7 @@ BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 
 # Either do RGBLIGHT_ENABLE or RGB_MATRIX_ENABLE and RGB_MATRIX_DRIVER
 RGBLIGHT_ENABLE ?= no
-RGB_MATRIX_ENABLE ?= yes
+RGB_MATRIX_ENABLE ?= no
 RGB_MATRIX_DRIVER = WS2812
 WS2812_DRIVER = vendor
 
@@ -56,7 +56,8 @@ FP_CIRQUE_LEFT_TRACKBALL_RIGHT ?= no
 # When qmk supports multiple types of pointing devices, can remove this line below
 # Also, can remove the question from fp_build.json
 FP_SPLIT_LEFT ?= yes
-FP_SPLIT_RIGHT ?= no
+FP_SPLIT_RIGHT ?= yes
+FP_STARTUP_ANIMATION_DISABLE ?= yes
 
 ifeq ($(strip $(FP_TRACKBALL_BOTH)), yes)
    PMW3360_ENABLE = yes

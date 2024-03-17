@@ -11,10 +11,10 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
         case RCTL_T(KC_L):
         case RALT_T(KC_SCLN):
            return TAPPING_TERM * 2;
-        case LT(1,KC_BSPC):
-        case LT(4,KC_DELETE):
-        case LT(3,KC_SPACE):
-            return TAPPING_TERM / 2;
+        // case LT(1,KC_BSPC):
+        // case LT(4,KC_DELETE):
+        // case LT(3,KC_SPACE):
+        //     return TAPPING_TERM;
         default:
             return TAPPING_TERM;
     }

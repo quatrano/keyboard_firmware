@@ -1,3 +1,9 @@
+#define TAPPING_TERM 200
+#define TAPPING_TERM_PER_KEY
+#undef PERMISSIVE_HOLD
+#undef HOLD_ON_OTHER_KEY_PRESS
+#define IGNORE_MOD_TAP_INTERRUPT
+
 // helper fn to avoid defining non-existent keys for 36 key variation
 #define LAYOUT_ximi36( \
   K01, K02, K03, K04, K05, K35, K34, K33, K32, K31, \
